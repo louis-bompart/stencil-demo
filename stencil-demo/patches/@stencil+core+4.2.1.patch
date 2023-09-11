@@ -1,0 +1,12 @@
+diff --git a/node_modules/@stencil/core/compiler/stencil.js b/node_modules/@stencil/core/compiler/stencil.js
+index 73b3620..4a4397b 100644
+--- a/node_modules/@stencil/core/compiler/stencil.js
++++ b/node_modules/@stencil/core/compiler/stencil.js
+@@ -256543,6 +256543,7 @@ const getTranspileConfig = (input) => {
+     target: getTranspileConfigOpt(input.target, VALID_TARGET, 'latest'),
+   };
+   const tsCompilerOptions = {
++    experimentalDecorators: true,
+     // best we always set this to true
+     allowSyntheticDefaultImports: true,
+     // best we always set this to true
